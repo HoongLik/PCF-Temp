@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:referenceDataMicroserviceDataModelsConfig module="reference-data-microservice-data-model" version="1.4.0" xmlns:ns6="http://www.openet.com/sm-policies-data-model/1.x" xmlns:ns5="http://www.openet.com/pcf-conditions-data-model/1.x" xmlns:ns8="http://www.openet.com/forge-statistics-data-model/1.x" xmlns:ns7="http://www.openet.com/decision-engine-data-model/1.x" xmlns:ns9="http://www.openet.com/ue-policies-data-model/1.x" xmlns:ns10="http://www.openet.com/am-policies-data-model/1.x" xmlns:ns2="http://www.openet.com/pa-policies-data-model/1.x" xmlns:ns4="http://www.openet.com/gui-policies-data-model/1.x" xmlns:ns3="http://www.openet.com/reference-data-microservice-data-model/1.x">
+    <ns3:items/>
+</ns3:referenceDataMicroserviceDataModelsConfig>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns6:smPoliciesConfig module="sm-policies-data-model" version="1.4.0" xmlns:ns6="http://www.openet.com/sm-policies-data-model/1.x" xmlns:ns5="http://www.openet.com/pcf-conditions-data-model/1.x" xmlns:ns8="http://www.openet.com/forge-statistics-data-model/1.x" xmlns:ns7="http://www.openet.com/decision-engine-data-model/1.x" xmlns:ns9="http://www.openet.com/ue-policies-data-model/1.x" xmlns:ns10="http://www.openet.com/am-policies-data-model/1.x" xmlns:ns2="http://www.openet.com/pa-policies-data-model/1.x" xmlns:ns4="http://www.openet.com/gui-policies-data-model/1.x" xmlns:ns3="http://www.openet.com/reference-data-microservice-data-model/1.x">
+    <ns6:policies>
+        <ns6:policy id="1">
+            <ns6:bsfLocation/>
+            <ns6:bsfPort/>
+            <ns6:decisionEngineLocation/>
+            <ns6:decisionEnginePort/>
+            <ns6:policyDataLocation/>
+            <ns6:policyDataPort/>
+            <ns6:subscriptionDataLocation/>
+            <ns6:subscriptionDataPort/>
+            <ns6:udsfLocation/>
+            <ns6:udsfPort/>
+            <ns6:webServerConfig>
+                <bindAddress value="0.0.0.0"/>
+                <http2Settings>
+                    <maxConcurrentStreams value="1000"/>
+                </http2Settings>
+                <httpVersion value="http/2"/>
+                <overloadProtectionConfig>
+                    <performanceMetricConfigs>
+                        <performanceMetricConfig>
+                            <highMark value="200"/>
+                            <lowMark value="190"/>
+                            <type value="com.openet.fusionworks.component.overload_management.impl.perfmetrics.ContainerCpuUsageMetric"/>
+                        </performanceMetricConfig>
+                    </performanceMetricConfigs>
+                    <requestHistogramConfig>
+                        <updateInterval value="2000"/>
+                        <window value="20000"/>
+                    </requestHistogramConfig>
+                    <throttlingConfig>
+                        <evaluationPeriod value="5000"/>
+                        <maxAdjustmentStep value="10"/>
+                    </throttlingConfig>
+                </overloadProtectionConfig>
+                <port value="8443"/>
+                <receiveBufferSize value="8192"/>
+                <sendBufferSize value="8192"/>
+                <ssl value="false"/>
+                <tcpFastOpen value="true"/>
+                <tcpKeepAlive value="true"/>
+                <tlsConfig>
+                    <alpn value="true"/>
+                    <keystorePath value="/opt/deploy/OMP/keystore.jks"/>
+                    <storePassword value="storepass"/>
+                </tlsConfig>
+                <verticleInstances value="4"/>
+            </ns6:webServerConfig>
+        </ns6:policy>
+    </ns6:policies>
+</ns6:smPoliciesConfig>

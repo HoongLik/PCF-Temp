@@ -1,0 +1,3598 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:guiPoliciesRoot createTime="16-Mar-2020 01:20:02" module="gui-policies-data-model" name="GuipolicyRoot" version="1.9.0" xmlns:ns2="http://www.openet.com/gui-policies-data-model/1.x" xmlns:ns3="http://www.openet.com/pcf-conditions-data-model/1.x">
+    <ns2:actionGroups>
+        <ns2:actionGroup name="Default">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>151</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="UERouteSelectionRule">actions[id="147"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="AmfEventSubscription">actions[id="217"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="AMEventTriggersRule">actions[id="202"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="ActionGroup_SMTrigger">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>216</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="UERouteSelectionRule">actions[id="147"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="148"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="149"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="AMEventTriggersRule">actions[id="202"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="AmfEventSubscription">actions[id="217"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="ActionGroup_NotifSst">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>225</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="UERouteSelectionRule">actions[id="146"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="VISION_ACTION">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>240</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="149"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="233"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="234"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="INTERNET_ACTION">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>310</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions>
+                <ns2:elseAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="148"]</ns2:elseAction>
+                <ns2:elseAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="149"]</ns2:elseAction>
+            </ns2:elseActions>
+            <ns2:id>242</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="149"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="230"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="231"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Local-Spending-Limit">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>319</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions>
+                <ns2:elseAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="344"]</ns2:elseAction>
+                <ns2:elseAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="345"]</ns2:elseAction>
+                <ns2:elseAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="347"]</ns2:elseAction>
+            </ns2:elseActions>
+            <ns2:id>324</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="325"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="326"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="338"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Any Web Traffic">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>326</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="322"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="OperatorWebtraffic">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>328</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="323"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Domestic-Roam-Spending-Limit">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>334</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions>
+                <ns2:elseAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="352"]</ns2:elseAction>
+                <ns2:elseAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="355"]</ns2:elseAction>
+                <ns2:elseAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="361"]</ns2:elseAction>
+            </ns2:elseActions>
+            <ns2:id>350</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="351"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="353"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="357"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-mIOT-Devices">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>415</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions>
+                <ns2:elseAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="405"]</ns2:elseAction>
+            </ns2:elseActions>
+            <ns2:id>408</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="404"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Iot-Devices-Pcc-Rules">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>421</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="406"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Gaming-180-AMP">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>505</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>427</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="UERouteSelectionRule">actions[id="425"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Gaming-180-SMP">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>385</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>428</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="422"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="423"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Tethering-PDU">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>441</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="440"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Tethering-Pcc-Rule-Inbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>315</ns2:condition>
+                <ns2:condition>319</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>442</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="438"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Tethering-Pcc-Rule-Outbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>315</ns2:condition>
+                <ns2:condition>336</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>443</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="439"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Disaster-Relief">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>471</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="469"]</ns2:ifAction>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="470"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Unlimited-Extra-Inbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>496</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>489</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="487"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Unlimited-Extra-Outbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>494</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>490</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="488"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Action-Group-Unlimited-Extra-PDUSession">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>492</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>491</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="484"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Clone Action-Group-Unlimited-Extra-Inbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>492</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="487"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Clone Action-Group-Unlimited-Extra-Outbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>493</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="488"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="Clone Action-Group-Unlimited-Extra-PDUSession">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>494</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="484"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Gold-Inbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>578</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>577</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="534"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Gold-Outbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>580</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>598</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="535"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PCC-Rule-Catch-All-Gold">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>599</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="544"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Silver-Inbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>582</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>604</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="536"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Silver-Outbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>584</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>605</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="537"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PCC-Rule-Catch-All-Silver">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>607</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="544"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Bronze-Inbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>586</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>608</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="538"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Bronze-Outbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>588</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>609</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="539"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PCC-Rule-Catch-All-Bronze">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>610</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="544"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Copper-Inbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>590</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>611</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="540"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Copper-Outbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>592</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>612</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="541"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PCC-Rule-Catch-All-Copper">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>613</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="544"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Tin-Inbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>594</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>614</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="542"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PDU-Session-on-Tin-Outbundle">
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>596</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>615</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="PDUSessionRule">actions[id="543"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+        <ns2:actionGroup name="PCC-Rule-Catch-All-Tin">
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description/>
+            <ns2:elseActions/>
+            <ns2:id>616</ns2:id>
+            <ns2:ifActions>
+                <ns2:ifAction module="gui-policies-data-model" type="DynamicPCCRule">actions[id="544"]</ns2:ifAction>
+            </ns2:ifActions>
+            <ns2:tags/>
+        </ns2:actionGroup>
+    </ns2:actionGroups>
+    <ns2:actionTypes>
+        <ns2:actionType name="UERouteSelectionRule">
+            <ns2:description value="A UE Route Selection Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="DynamicPCCRule">
+            <ns2:description value="A Dynamic PCC Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="StaticPCCRule">
+            <ns2:description value="A Static PCC Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="PDUSessionRule">
+            <ns2:description value="A PDU Session Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="AMEventTriggersRule">
+            <ns2:description value="An Access and Mobility Event Triggers Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="PDUSessionEventTriggersRule">
+            <ns2:description value="A PDU Session Event Triggers Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="RfspIndexRule">
+            <ns2:description value="A Radio Frequency Selection Prioritisation Index Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="TerminatePduSessionRule">
+            <ns2:description value="A Terminate PDU Session Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="ServiceAreaRestrictionRule">
+            <ns2:description value="A Service Area Restriction Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="WriteEDRRule">
+            <ns2:description value="A Write Event Details Record Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="IncrementCountRule">
+            <ns2:description value="An Increment Count Rule type"/>
+            <ns2:tags/>
+        </ns2:actionType>
+        <ns2:actionType name="AmfEventSubscription">
+            <ns2:description value="An AMF Event Subscription"/>
+            <ns2:tags/>
+        </ns2:actionType>
+    </ns2:actionTypes>
+    <ns2:actions>
+        <ns2:action xsi:type="ns2:ueRouteSelectionRule" name="Vision - Netflex trailer service" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="UERouteSelectionRule"]</ns2:actionType>
+            <ns2:description value="supposition of Netflex trailer service"/>
+            <ns2:id>146</ns2:id>
+            <ns2:tags/>
+            <ns2:precedence value="1"/>
+            <ns2:routeSelectionDescriptors>
+                <ns2:routeSelectionDescriptor name="supposition of Netflex trailer service">
+                    <ns2:dnns>
+                        <ns2:dnn>vision</ns2:dnn>
+                    </ns2:dnns>
+                    <ns2:nonSeamlessOffloadInd>
+                        <ns2:permittedAccessNetwork value=""/>
+                    </ns2:nonSeamlessOffloadInd>
+                    <ns2:nssais>
+                        <ns2:nssai>
+                            <ns2:sliceDiff value="000001"/>
+                            <ns2:sliceServiceType value="1"/>
+                        </ns2:nssai>
+                    </ns2:nssais>
+                    <ns2:precedence value="1"/>
+                    <ns2:sscMode>SSC_MODE_1</ns2:sscMode>
+                </ns2:routeSelectionDescriptor>
+            </ns2:routeSelectionDescriptors>
+            <ns2:trafficDesc>
+                <ns2:applicationIdentifiers/>
+                <ns2:ipDescriptors>
+                    <ns2:ipDescriptor>
+                        <ns2:destPortNumber/>
+                        <ns2:INetAddress value="172.23.45.69/32"/>
+                        <ns2:ipType>IPV4</ns2:ipType>
+                        <ns2:protocol value="UDP"/>
+                    </ns2:ipDescriptor>
+                </ns2:ipDescriptors>
+            </ns2:trafficDesc>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:ueRouteSelectionRule" name="Internet - Normal internet traffic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="UERouteSelectionRule"]</ns2:actionType>
+            <ns2:description value="Normal internet traffic"/>
+            <ns2:id>147</ns2:id>
+            <ns2:tags/>
+            <ns2:precedence value="2"/>
+            <ns2:routeSelectionDescriptors>
+                <ns2:routeSelectionDescriptor name="Normal internet traffic">
+                    <ns2:dnns>
+                        <ns2:dnn>internet</ns2:dnn>
+                    </ns2:dnns>
+                    <ns2:nonSeamlessOffloadInd>
+                        <ns2:permittedAccessNetwork value=""/>
+                    </ns2:nonSeamlessOffloadInd>
+                    <ns2:nssais>
+                        <ns2:nssai>
+                            <ns2:sliceDiff value=""/>
+                            <ns2:sliceServiceType value="1"/>
+                        </ns2:nssai>
+                    </ns2:nssais>
+                    <ns2:precedence value="2"/>
+                    <ns2:sscMode>SSC_MODE_1</ns2:sscMode>
+                </ns2:routeSelectionDescriptor>
+            </ns2:routeSelectionDescriptors>
+            <ns2:trafficDesc>
+                <ns2:applicationIdentifiers/>
+                <ns2:ipDescriptors>
+                    <ns2:ipDescriptor>
+                        <ns2:destPortNumber/>
+                        <ns2:INetAddress value=""/>
+                        <ns2:ipType>IPV4</ns2:ipType>
+                        <ns2:protocol value="UDP"/>
+                    </ns2:ipDescriptor>
+                </ns2:ipDescriptors>
+            </ns2:trafficDesc>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Robotic Vision MEC servers 1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Robotic Vision MEC servers"/>
+            <ns2:id>148</ns2:id>
+            <ns2:tags/>
+            <ns2:afSigProtocol>SIP</ns2:afSigProtocol>
+            <ns2:appId value="11"/>
+            <ns2:appReloc value="true"/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="chgid_7"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online/>
+                <ns2:ratingGroup value="1"/>
+                <ns2:serviceId value="11"/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion value="20181011"/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections>
+                <ns2:pccPolicySelection>GATING</ns2:pccPolicySelection>
+                <ns2:pccPolicySelection>CHARGING</ns2:pccPolicySelection>
+            </ns2:pccPolicySelections>
+            <ns2:precedence value="1"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="302"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="302"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="SESSRULE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="SESSRULE"/>
+            <ns2:id>149</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="303"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>AC_TY_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>SUCC_RES_ALLO</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>RAT_TY_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>UE_IP_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:amEventTriggersRule" name="Robotic Vision Event Trigger" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="AMEventTriggersRule"]</ns2:actionType>
+            <ns2:description value="Robotic Vision Event Trigger"/>
+            <ns2:id>202</ns2:id>
+            <ns2:tags/>
+            <ns2:amEventTriggersRules>
+                <ns2:amEventTriggersRule>LOC_CH</ns2:amEventTriggersRule>
+            </ns2:amEventTriggersRules>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:amfEventSubscription" name="Default AMF Event Subscription" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="AmfEventSubscription"]</ns2:actionType>
+            <ns2:description value="Subscribe LOCATION_REPORT, PRESENCE_IN_AOI_REPORT and REACHABILITY_REPORT"/>
+            <ns2:id>217</ns2:id>
+            <ns2:tags/>
+            <ns2:amfEvents>
+                <ns2:amfEvent id="218">
+                    <amfEventAreas/>
+                    <locationFilters>
+                        <locationFilter>TAI</locationFilter>
+                    </locationFilters>
+                    <type>LOCATION_REPORT</type>
+                </ns2:amfEvent>
+                <ns2:amfEvent id="219">
+                    <amfEventAreas>
+                        <amfEventArea>
+                            <id>229</id>
+                            <presenceInfo>
+                                <praId value="0xAB12EF"/>
+                                <trackingAreas>
+                                    <trackingArea>
+                                        <mcc value="502"/>
+                                        <mnc value="01"/>
+                                        <tac value="004743"/>
+                                    </trackingArea>
+                                </trackingAreas>
+                            </presenceInfo>
+                        </amfEventArea>
+                    </amfEventAreas>
+                    <locationFilters/>
+                    <type>PRESENCE_IN_AOI_REPORT</type>
+                </ns2:amfEvent>
+                <ns2:amfEvent id="220">
+                    <amfEventAreas/>
+                    <locationFilters/>
+                    <type>REACHABILITY_REPORT</type>
+                </ns2:amfEvent>
+            </ns2:amfEvents>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="DOWN_WILD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description/>
+            <ns2:id>230</ns2:id>
+            <ns2:tags/>
+            <ns2:appId value="12"/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="chgid_230"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="8192"/>
+                <ns2:serviceId value="2"/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections>
+                <ns2:pccPolicySelection>CHARGING</ns2:pccPolicySelection>
+            </ns2:pccPolicySelections>
+            <ns2:precedence value="2"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="302"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="302"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="UP_WILD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description/>
+            <ns2:id>231</ns2:id>
+            <ns2:tags/>
+            <ns2:appId value="13"/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="chgid_231"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="8192"/>
+                <ns2:serviceId value="1"/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections>
+                <ns2:pccPolicySelection>CHARGING</ns2:pccPolicySelection>
+            </ns2:pccPolicySelections>
+            <ns2:precedence value="3"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="302"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="302"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="DOWN_VISION" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description/>
+            <ns2:id>233</ns2:id>
+            <ns2:tags/>
+            <ns2:appId value="14"/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="chgid_233"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="8190"/>
+                <ns2:serviceId value="2"/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections>
+                <ns2:pccPolicySelection>CHARGING</ns2:pccPolicySelection>
+            </ns2:pccPolicySelections>
+            <ns2:precedence value="4"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="302"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="302"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="UP_VISION" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description/>
+            <ns2:id>234</ns2:id>
+            <ns2:tags/>
+            <ns2:appId value="15"/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="chgid_234"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="8190"/>
+                <ns2:serviceId value="1"/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections>
+                <ns2:pccPolicySelection>CHARGING</ns2:pccPolicySelection>
+            </ns2:pccPolicySelections>
+            <ns2:precedence value="5"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="302"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="302"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:staticPCCRule" name="STATIC_AUDIO" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="StaticPCCRule"]</ns2:actionType>
+            <ns2:description/>
+            <ns2:id>300</ns2:id>
+            <ns2:tags/>
+            <ns2:staticPCCRuleIdentifier value="STATIC_AUDIO"/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:staticPCCRule" name="STATIC_AUDIO_RTCP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="StaticPCCRule"]</ns2:actionType>
+            <ns2:description/>
+            <ns2:id>301</ns2:id>
+            <ns2:tags/>
+            <ns2:staticPCCRuleIdentifier value="STATIC_AUDIO_RTCP"/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="AnyWebTraffic_rule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description/>
+            <ns2:id>322</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="AnyWebTrafficKey"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="false"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="1000"/>
+                <ns2:serviceId value="1000"/>
+                <ns2:serviceIdLevelReporting>SER_ID_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="10"/>
+            <ns2:qoSDataProfiles/>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="320"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="OperatorTraffic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description/>
+            <ns2:id>323</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="OperatorTraffic"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="1001"/>
+                <ns2:serviceId value="1001"/>
+                <ns2:serviceIdLevelReporting>SER_ID_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="99"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="324"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="321"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Local-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="PDU Sessoin Rule for Local in bundle "/>
+            <ns2:id>325</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="362"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>QOS_NOTIF</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>SAREA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-Catch-All-Local-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Dynamic Pcc Rule for Catch-All traffic"/>
+            <ns2:id>326</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="Charge100"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="1010"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="339"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-HBO-Local-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Dynamic Pcc Rule for HBO traffic"/>
+            <ns2:id>338</ns2:id>
+            <ns2:tags/>
+            <ns2:appId value="426"/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId value="TEMP"/>
+                <ns2:applicationServiceProviderId value="HBO-Max-01"/>
+                <ns2:chargingKey value="LocalInBundle-RagGrp200"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="false"/>
+                <ns2:ratingGroup value="200"/>
+                <ns2:serviceId/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId value="HBO-Max"/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="1040"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="332"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="380"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Local-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="PDU Rule for Local Usage - Out Of Bundle "/>
+            <ns2:id>344</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="327"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-Catch-All-Local-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="PCC rule for Local Out of bundle"/>
+            <ns2:id>345</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="LocalOutBundle100"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="1060"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="346"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-HBO-Local-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Out of Bundle PCC rule for RatGrp200 (HBO-Max)"/>
+            <ns2:id>347</ns2:id>
+            <ns2:tags/>
+            <ns2:appId value="426"/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId value="TEMP"/>
+                <ns2:applicationServiceProviderId value="HBO-Max-01"/>
+                <ns2:chargingKey value="OutBundle_200"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="false"/>
+                <ns2:ratingGroup value="200"/>
+                <ns2:serviceId/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId value="HBO-Max"/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="1070"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="348"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="380"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Domestic-Roam-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="PDU Session Rule for Domestic Roaming In bundle"/>
+            <ns2:id>351</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="328"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-Catch-All-Domestic-Roam-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Out of Bundle Domestic Roaming PCC rule "/>
+            <ns2:id>352</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="DomesticRoamOutBundle100"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="1110"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="356"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-HBO-Domestic-Roam-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="In Bundle PCC rule for Domestic Roaming user"/>
+            <ns2:id>353</ns2:id>
+            <ns2:tags/>
+            <ns2:appId value="426"/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId value="TEMP"/>
+                <ns2:applicationServiceProviderId value="HBO-Max-01"/>
+                <ns2:chargingKey value="domestic-roam-200"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="false"/>
+                <ns2:ratingGroup value="200"/>
+                <ns2:serviceId/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId value="HBO-Max"/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="1080"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="354"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="380"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-HBO-Domestic-Roam-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Out of Bundle PCC rule for Domestic Roaming user (RG 200)"/>
+            <ns2:id>355</ns2:id>
+            <ns2:tags/>
+            <ns2:appId value="426"/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId value="TEMP"/>
+                <ns2:applicationServiceProviderId value="HBO-Max-01"/>
+                <ns2:chargingKey value="domestic-roam-200"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="false"/>
+                <ns2:ratingGroup value="200"/>
+                <ns2:serviceId/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId value="HBO-Max"/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="1100"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="330"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="380"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-Catch-All-Domestic-Roam-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="In bundle PCC rule for Domestic Roaming User"/>
+            <ns2:id>357</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="domestic-roam-100"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:serviceIdLevelReporting>RAT_GR_LEVEL</ns2:serviceIdLevelReporting>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="1090"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="358"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Domestic-Roam-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Out of Bundle PDU Session Rule for Domestic Roaming"/>
+            <ns2:id>361</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="329"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="PDU Session - mIoT Devices (Premium)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Premium QoS for mIOT devices"/>
+            <ns2:id>404</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="402"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>QOS_NOTIF</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="PDU Session - mIoT Devices (Low)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="PDU Session - mIoT Devices (Low)"/>
+            <ns2:id>405</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="403"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>QOS_NOTIF</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Dynamic Rule - mIoT Devices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Time based metering and RG=400"/>
+            <ns2:id>406</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="mIoT"/>
+                <ns2:measurementMethod>DURATION</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="400"/>
+                <ns2:serviceId/>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="400"/>
+            <ns2:qoSDataProfiles/>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-PlayStation-180" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Dynamic Pcc rule for PlayStation Gaming"/>
+            <ns2:id>422</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId value="PS_001"/>
+                <ns2:applicationServiceProviderId value="PS_001"/>
+                <ns2:chargingKey value="PlayStation-180-Charging"/>
+                <ns2:measurementMethod>DURATION</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="false"/>
+                <ns2:ratingGroup value="500"/>
+                <ns2:serviceId/>
+                <ns2:sponsorId value="PlayStation"/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="33"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="312"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="PDU Session-PlayStation-180" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="PDU Session Rule for PlayStation Gaming - Premium QoS"/>
+            <ns2:id>423</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="402"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="false"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>QOS_NOTIF</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>RAT_TY_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:ueRouteSelectionRule" name="URSP-Gaming-Service" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="UERouteSelectionRule"]</ns2:actionType>
+            <ns2:description value="UE Route Selection Policy to activate Gaming-180 Gaming Slice"/>
+            <ns2:id>425</ns2:id>
+            <ns2:tags/>
+            <ns2:precedence value="3"/>
+            <ns2:routeSelectionDescriptors>
+                <ns2:routeSelectionDescriptor name="PlayStation Service">
+                    <ns2:accessNetworkPref>ACCESS_3GPP</ns2:accessNetworkPref>
+                    <ns2:dnns>
+                        <ns2:dnn>playstation</ns2:dnn>
+                    </ns2:dnns>
+                    <ns2:nonSeamlessOffloadInd>
+                        <ns2:permittedAccessNetwork value=""/>
+                    </ns2:nonSeamlessOffloadInd>
+                    <ns2:nssais>
+                        <ns2:nssai>
+                            <ns2:sliceDiff value="000001"/>
+                            <ns2:sliceServiceType value="2"/>
+                        </ns2:nssai>
+                    </ns2:nssais>
+                    <ns2:pduSessionType>IPV4</ns2:pduSessionType>
+                    <ns2:precedence value="3"/>
+                    <ns2:sscMode>SSC_MODE_1</ns2:sscMode>
+                </ns2:routeSelectionDescriptor>
+            </ns2:routeSelectionDescriptors>
+            <ns2:trafficDesc>
+                <ns2:applicationIdentifiers/>
+                <ns2:ipDescriptors>
+                    <ns2:ipDescriptor>
+                        <ns2:destPortNumber/>
+                        <ns2:INetAddress value=""/>
+                        <ns2:ipType>IPV4</ns2:ipType>
+                        <ns2:protocol value="UDP"/>
+                    </ns2:ipDescriptor>
+                </ns2:ipDescriptors>
+            </ns2:trafficDesc>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-Tethering-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Dynamic Pcc Rule for Tethering RG=100 Qos-Dpcc-Tethering-Inbundle"/>
+            <ns2:id>438</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="Tethering-Charging-Id"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="766"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="482"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-Tethering-OutBundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Dynamic Pcc Rule for Tethering RG=100 Qos-Dpcc-Tethering-Outbundle"/>
+            <ns2:id>439</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="Tethering-Charging-Id"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="777"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="481"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="PDU Session Rule - Tethering" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="PDU Session Rule for Tethering Services (QoS_Pdu-Local-Inbundle)"/>
+            <ns2:id>440</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="362"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>QOS_NOTIF</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>SAREA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="PDU Session Rule-DisasterRelief" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="PDU Session Rule for Disaster Relief"/>
+            <ns2:id>469</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="402"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="false"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>SAREA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-DisasterRelief" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Pcc Rule Disaster Relief RG=300"/>
+            <ns2:id>470</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="Disaster-Relief-Id"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="false"/>
+                <ns2:ratingGroup value="300"/>
+                <ns2:serviceId/>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="505"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="312"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="PDU Session-UnlimitedExtra" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="PDU Session rule for unlimited extra service"/>
+            <ns2:id>484</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="362"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>SAREA_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>QOS_NOTIF</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-UnlimitedExtra-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Dynamic Pcc rule for Unlimited Extra Inbundle"/>
+            <ns2:id>487</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="UnlimitedExtra-Charging-Id"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="778"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="486"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-UnlimitedExtra-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Dynamic Pcc rule for unlimited Extra Out Bundle"/>
+            <ns2:id>488</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="UnlimitedExtra-Charging-Id"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline value="true"/>
+                <ns2:online value="true"/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="789"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="485"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Gold-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Gold tier - in-bundle"/>
+            <ns2:id>534</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="524"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Gold-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Gold tier - out-bundle"/>
+            <ns2:id>535</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="525"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Silver-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Silver tier - in-bundle"/>
+            <ns2:id>536</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="526"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Silver-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Silver tier - out-bundle"/>
+            <ns2:id>537</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="527"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Bronze-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Bronze tier - in-bundle"/>
+            <ns2:id>538</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="528"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Bronze-outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Bronze tier - out-bundle"/>
+            <ns2:id>539</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="529"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Copper-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Copper tier - in-bundle"/>
+            <ns2:id>540</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="530"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Copper-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Copper tier - out-bundle"/>
+            <ns2:id>541</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="531"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Tin-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Tin tier - in-bundle"/>
+            <ns2:id>542</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="532"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:pduSessionRule" name="Pdu-Session-Rule-Tin-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="PDUSessionRule"]</ns2:actionType>
+            <ns2:description value="Pdu Session Rule for Tin tier - out-bundle"/>
+            <ns2:id>543</ns2:id>
+            <ns2:tags/>
+            <ns2:authDefQoSProfiles>
+                <ns2:authDefQoSProfile module="gui-policies-data-model" type="AuthDefQoSProfile">qoSProfiles[id="533"]</ns2:authDefQoSProfile>
+            </ns2:authDefQoSProfiles>
+            <ns2:authorisedMbrIPCan/>
+            <ns2:authorisedQosIPCan/>
+            <ns2:chargingInfo>
+                <ns2:primaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+                <ns2:secondaryChfAddress value="http://chf-svc.att-demo-kob.svc.cluster.local:31711"/>
+            </ns2:chargingInfo>
+            <ns2:defaultNbifomAccess/>
+            <ns2:dynamicQosCharacteristics/>
+            <ns2:ipIndex/>
+            <ns2:offline value="true"/>
+            <ns2:online value="true"/>
+            <ns2:policyControlRequestTriggers>
+                <ns2:policyControlRequestTrigger>DEF_QOS_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PLMN_CH</ns2:policyControlRequestTrigger>
+                <ns2:policyControlRequestTrigger>PRA_CH</ns2:policyControlRequestTrigger>
+            </ns2:policyControlRequestTriggers>
+            <ns2:presenceReportingArea/>
+            <ns2:reflectiveQosTimer/>
+            <ns2:revalidationTimeLimit/>
+            <ns2:subsequentAuthDef5qiArp/>
+            <ns2:subsequentAuthSessionAmbr/>
+            <ns2:timeCondition/>
+        </ns2:action>
+        <ns2:action xsi:type="ns2:dynamicPCCRule" name="Pcc-Rule-Catch-All-All-Tiers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:actionType module="gui-policies-data-model" type="ActionType">actionTypes[name="DynamicPCCRule"]</ns2:actionType>
+            <ns2:description value="Catch-all Dynamic PCC Rule for all tiers"/>
+            <ns2:id>544</ns2:id>
+            <ns2:tags/>
+            <ns2:appId/>
+            <ns2:appReloc/>
+            <ns2:charging>
+                <ns2:applicationFunctionRecordId/>
+                <ns2:applicationServiceProviderId/>
+                <ns2:chargingKey value="catch-all"/>
+                <ns2:measurementMethod>VOLUME</ns2:measurementMethod>
+                <ns2:offline/>
+                <ns2:online/>
+                <ns2:ratingGroup value="100"/>
+                <ns2:serviceId/>
+                <ns2:sponsorId/>
+            </ns2:charging>
+            <ns2:contVersion/>
+            <ns2:gatingModeDown>OPEN</ns2:gatingModeDown>
+            <ns2:gatingModeUp>OPEN</ns2:gatingModeUp>
+            <ns2:pccPolicySelections/>
+            <ns2:precedence value="6"/>
+            <ns2:qoSDataProfiles>
+                <ns2:qoSDataProfile module="gui-policies-data-model" type="QoSDataProfile">qoSProfiles[id="312"]</ns2:qoSDataProfile>
+            </ns2:qoSDataProfiles>
+            <ns2:redirect/>
+            <ns2:redirectDestination/>
+            <ns2:sdfTemplate module="gui-policies-data-model" type="SDFTemplate">sdfTemplates[id="364"]</ns2:sdfTemplate>
+        </ns2:action>
+    </ns2:actions>
+    <ns2:applicationTemplates>
+        <ns2:applicationTemplate name="DEFAULT">
+            <ns2:afApplicationId value=""/>
+            <ns2:id>299</ns2:id>
+            <ns2:iotMode value="false"/>
+            <ns2:matchAllTemplate value="true"/>
+            <ns2:predefinedActions>
+                <ns2:predefinedAction module="gui-policies-data-model" type="StaticPCCRule">actions[id="300"]</ns2:predefinedAction>
+                <ns2:predefinedAction module="gui-policies-data-model" type="StaticPCCRule">actions[id="301"]</ns2:predefinedAction>
+            </ns2:predefinedActions>
+        </ns2:applicationTemplate>
+    </ns2:applicationTemplates>
+    <ns2:blueprints>
+        <ns2:blueprint name="Robotic Vision">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="151"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>308</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:id>150</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="IPv4 is updated">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="216"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>306</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="when IPv4 is updated"/>
+            <ns2:id>215</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="UDR is updated">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="225"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>219</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="PolicyDataChangeNotification Sst = 1 and Sd = 000001"/>
+            <ns2:id>224</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="DNN VISION">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="240"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>237</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="install rules for VISION"/>
+            <ns2:id>239</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="DNN INTERNET ">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="242"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>235</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="install rules for INTERNET and handling DNN not INTERNET | VISION"/>
+            <ns2:id>241</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="AT&amp;T Network Spending Limit Control">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="324"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>315</ns2:condition>
+                <ns2:condition>374</ns2:condition>
+                <ns2:condition>472</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="Subscriber slowdown based on % data used on AT&amp;T network using spending limit control"/>
+            <ns2:id>323</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="Any Web Traffic ">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="326"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>329</ns2:condition>
+            </ns2:conditions>
+            <ns2:description/>
+            <ns2:id>325</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="Operator Web Traffic">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="328"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>311</ns2:condition>
+                <ns2:condition>331</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="Operator specific web-trafic"/>
+            <ns2:id>327</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="AT&amp;T Domestic Roaming using Spending Limit Control">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="350"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>317</ns2:condition>
+                <ns2:condition>377</ns2:condition>
+                <ns2:condition>472</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="AT&amp;T Domestic Roaming using Spending Limit Control"/>
+            <ns2:id>349</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="IoT Healthcare - PDU Session">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="408"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>383</ns2:condition>
+                <ns2:condition>399</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="IoT Healthcare  PDU Session Rule (SST=3 and DNN=m2m.com.attz)"/>
+            <ns2:id>407</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="IoT Healthcare - Dynamic Pcc rule">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="421"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>383</ns2:condition>
+                <ns2:condition>399</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="IoT Healthcare - Dynamic Pcc rule  (SST=3 and DNN=m2m.com.attz)"/>
+            <ns2:id>420</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="Gaming">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="427"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="428"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions/>
+            <ns2:description value="Blueprint to activate Station Gaming services for AMP and SMP"/>
+            <ns2:id>426</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="Tethering-Blueprint">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="441"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="442"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="443"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>431</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="Blueprint to manage Tethering services"/>
+            <ns2:id>437</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="Disaster-Relief">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="471"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>474</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="Blueprint for Disaster Relief enablement"/>
+            <ns2:id>444</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="Unlimited Extra">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="490"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="491"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>472</ns2:condition>
+                <ns2:condition>492</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="Unlimited Extra"/>
+            <ns2:id>483</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="Clone Test">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="492"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="494"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>472</ns2:condition>
+                <ns2:condition>517</ns2:condition>
+                <ns2:condition>519</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="Clone Test"/>
+            <ns2:id>484</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="MobileShare-Group-Gold">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="577"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="598"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="599"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>434</ns2:condition>
+                <ns2:condition>550</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="MobileShare Group for Gold tier"/>
+            <ns2:id>576</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="MobileShare-Group-Silver">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="604"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="605"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="607"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>434</ns2:condition>
+                <ns2:condition>556</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="MobileShare Group for Silver tier"/>
+            <ns2:id>600</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="MobileShare-Group-Bronze">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="608"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="609"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="610"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>434</ns2:condition>
+                <ns2:condition>561</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="MobileShare Group for Bronze tier"/>
+            <ns2:id>601</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="MobileShare-Group-Copper">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="611"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="612"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="613"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>434</ns2:condition>
+                <ns2:condition>566</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="MobileShare Group for Copper tier"/>
+            <ns2:id>602</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+        <ns2:blueprint name="MobileShare-Group-Tin">
+            <ns2:actionGroups>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="614"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="615"]</ns2:actionGroup>
+                <ns2:actionGroup module="gui-policies-data-model" type="ActionGroup">actionGroups[id="616"]</ns2:actionGroup>
+            </ns2:actionGroups>
+            <ns2:complexConditions/>
+            <ns2:conditions>
+                <ns2:condition>434</ns2:condition>
+                <ns2:condition>571</ns2:condition>
+            </ns2:conditions>
+            <ns2:description value="MobileShare Group for Tin tier"/>
+            <ns2:id>603</ns2:id>
+            <ns2:isActive value="true"/>
+            <ns2:tags/>
+        </ns2:blueprint>
+    </ns2:blueprints>
+    <ns2:qoSCharacteristics>
+        <ns2:qoSCharacteristic name="QoS Char Non Critical GBR">
+            <averagingWindow/>
+            <description/>
+            <id>201</id>
+            <maxDataBurstVolume/>
+            <packetDelayBudget value="2"/>
+            <packetErrorRate value="9E-2"/>
+            <priorityLevel value="12"/>
+            <qos5Qi value="201"/>
+            <resourceType>NON_CRITICAL_GBR</resourceType>
+            <tags/>
+        </ns2:qoSCharacteristic>
+        <ns2:qoSCharacteristic name="QoS Char Critical GBR">
+            <averagingWindow/>
+            <description/>
+            <id>313</id>
+            <maxDataBurstVolume value="1234"/>
+            <packetDelayBudget value="123"/>
+            <packetErrorRate value="1E-1"/>
+            <priorityLevel value="1"/>
+            <qos5Qi value="12"/>
+            <resourceType>CRITICAL_GBR</resourceType>
+            <tags/>
+        </ns2:qoSCharacteristic>
+        <ns2:qoSCharacteristic name="QoS Char Non GBR">
+            <averagingWindow/>
+            <description/>
+            <id>314</id>
+            <maxDataBurstVolume/>
+            <packetDelayBudget value="123"/>
+            <packetErrorRate value="1E-1"/>
+            <priorityLevel value="1"/>
+            <qos5Qi value="11"/>
+            <resourceType>NON_GBR</resourceType>
+            <tags/>
+        </ns2:qoSCharacteristic>
+    </ns2:qoSCharacteristics>
+    <ns2:qoSProfiles>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="qosid_7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for DPCC Non GBR id 7"/>
+            <ns2:id>302</ns2:id>
+            <ns2:qosFlowPriorityLevel value="3"/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="3"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL value="1"/>
+            <guaranteedBitrateUL value="1"/>
+            <maxBitrateDL value="512"/>
+            <maxBitrateUL value="512"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qoSCharacteristic module="gui-policies-data-model" type="QoSCharacteristic">qoSCharacteristics[id="201"]</qoSCharacteristic>
+            <qos5qi value="201"/>
+            <qosId value="qosid_7"/>
+            <reflectiveQos/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl value="SHARING_KEY_DL"/>
+            <sharingKeyUl value="SHARING_KEY_UL"/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="qos_pdu_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for Session Rule Non GBR id 1"/>
+            <ns2:id>303</ns2:id>
+            <ns2:qosFlowPriorityLevel value="1"/>
+            <ns2:qosUnits>Gbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="1"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="5"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="1"/>
+                <ns2:uplink value="1"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="qosid_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for DPCC GBR id 1"/>
+            <ns2:id>304</ns2:id>
+            <ns2:qosFlowPriorityLevel value="1"/>
+            <ns2:qosUnits>Gbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="1"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL value="0"/>
+            <guaranteedBitrateUL value="0"/>
+            <maxBitrateDL value="10"/>
+            <maxBitrateUL value="10"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="1"/>
+            <qosId value="qosid_1"/>
+            <reflectiveQos/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="qosid_8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for DPCC Non GBR id 8"/>
+            <ns2:id>305</ns2:id>
+            <ns2:qosFlowPriorityLevel value="8"/>
+            <ns2:qosUnits>Gbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="8"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="5"/>
+            <maxBitrateUL value="5"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="8"/>
+            <qosId value="qosid_8"/>
+            <reflectiveQos/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="DefaultQoSProfile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description/>
+            <ns2:id>312</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:tags/>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication value="true"/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL/>
+            <maxBitrateUL/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi/>
+            <qosId value="DefaultQoSProfile"/>
+            <reflectiveQos/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="RQOS_5MB_UL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description/>
+            <ns2:id>324</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="2"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="5"/>
+            <maxBitrateUL value="5"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="5"/>
+            <qosId value="RQOS_5MB_UL"/>
+            <reflectiveQos value="true"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Local-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Out of bundle QoS for Local PDU Sessions"/>
+            <ns2:id>327</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="10"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="8"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="1"/>
+                <ns2:uplink value="1"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Domestic-Roam-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="In Bundle domestic roaming session QoS"/>
+            <ns2:id>328</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="12"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="8"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="400"/>
+                <ns2:uplink value="400"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Domestic-Roam-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="PDU Session Qos for out of bundle domestic roaming usage"/>
+            <ns2:id>329</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Kbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="12"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="8"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="128"/>
+                <ns2:uplink value="128"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Domestic-Roam-Outbundle-HBO" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Out of Bundle QoS for Domestic Roaming HBO pcc rule"/>
+            <ns2:id>330</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Kbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="10"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="128"/>
+            <maxBitrateUL value="128"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="7"/>
+            <qosId value="Qos-Dpcc-Domestic-Roam-Outbundle-HBO"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Local-Inbundle-HBO" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Local in bundle QoS for HBO Dynamic PCC rule"/>
+            <ns2:id>332</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="11"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="50"/>
+            <maxBitrateUL value="2"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="7"/>
+            <qosId value="Qos-Dpcc-Local-Inbundle-HBO"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Local-Inbundle-Catch-All" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Local in bundle QoS for Catch-All Dynamic PCC rule"/>
+            <ns2:id>339</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="11"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="400"/>
+            <maxBitrateUL value="400"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="7"/>
+            <qosId value="Qos-Dpcc-Local-Inbundle-Catch-All"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Local-Outbundle-Catch-All" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Out of bundle Catch-All Dpcc QoS"/>
+            <ns2:id>346</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="10"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="1"/>
+            <maxBitrateUL value="1"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="7"/>
+            <qosId value="Qos-Dpcc-Local-Outbundle-Catch-All"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Local-Outbundle-HBO" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Out of bundle QoS for HBO Pcc rule"/>
+            <ns2:id>348</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="10"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="1"/>
+            <maxBitrateUL value="1"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="7"/>
+            <qosId value="Qos-Dpcc-Local-Outbundle-HBO"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Domestic-Roam-Inbundle-HBO" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Domestic Roaming  in bundle QoS for HBO Dynamic PCC rule"/>
+            <ns2:id>354</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="11"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="50"/>
+            <maxBitrateUL value="5"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="7"/>
+            <qosId value="Qos-Dpcc-Domestic-Roam-Inbundle-HBO"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Domestic-Roam-Outbundle-Catch-All" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Out Bundle QoS for Domestic Roaming Catch-All pcc rule"/>
+            <ns2:id>356</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Kbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="10"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="128"/>
+            <maxBitrateUL value="128"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="7"/>
+            <qosId value="Qos-Dpcc-Domestic-Roam-Outbundle-Catch-All"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Domestic-Roam-Inbundle-Catch-All" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Domestic Roaming in bundle QoS for Catch-All Dynamic PCC rule"/>
+            <ns2:id>358</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="11"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="400"/>
+            <maxBitrateUL value="400"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="7"/>
+            <qosId value="Qos-Dpcc-Domestic-Roam-Inbundle-Catch-All"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Local-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="In Bundle Local PDU session QoS"/>
+            <ns2:id>362</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="12"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="8"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="400"/>
+                <ns2:uplink value="400"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Premium QoS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Premium QoS"/>
+            <ns2:id>402</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="2"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="6"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="400"/>
+                <ns2:uplink value="400"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Low QoS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Low QoS"/>
+            <ns2:id>403</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="15"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="9"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="5"/>
+                <ns2:uplink value="5"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name=" Qos-Dpcc-Tethering-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description/>
+            <ns2:id>481</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Kbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="5"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="128"/>
+            <maxBitrateUL value="128"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="5"/>
+            <qosId value=" Qos-Dpcc-Tethering-Outbundle"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-Tethering-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Tethering Inbundle QoS=200mbps"/>
+            <ns2:id>482</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="6"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="200"/>
+            <maxBitrateUL value="200"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="5"/>
+            <qosId value="Qos-Dpcc-Tethering-Inbundle"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-UnlimitedExtra-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Unlimited Extra OutBundle uses QoS=100 Mbps"/>
+            <ns2:id>485</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="5"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="5"/>
+            <maxBitrateUL value="5"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="5"/>
+            <qosId value="Qos-Dpcc-UnlimitedExtra-Outbundle"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="qoSDataProfile" name="Qos-Dpcc-UnlimitedExtra-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="Unlimited Extra Inbundle"/>
+            <ns2:id>486</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Gbps</ns2:qosUnits>
+            <ns2:tags/>
+            <arp>
+                <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                <ns2:priorityLevel value="4"/>
+            </arp>
+            <averagingWindow/>
+            <bindDefaultQoSRule/>
+            <defQosFlowIndication/>
+            <guaranteedBitrateDL/>
+            <guaranteedBitrateUL/>
+            <maxBitrateDL value="1"/>
+            <maxBitrateUL value="1"/>
+            <maxDataBurstVolume/>
+            <pscsSessionContinuity/>
+            <qos5qi value="5"/>
+            <qosId value="Qos-Dpcc-UnlimitedExtra-Inbundle"/>
+            <reflectiveQos value="false"/>
+            <reflectiveQosTimer/>
+            <sharingKeyDl/>
+            <sharingKeyUl/>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Gold-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Gold tier in-bundle"/>
+            <ns2:id>524</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="6"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="6"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="1000"/>
+                <ns2:uplink value="1000"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Gold-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Gold tier out-bundle"/>
+            <ns2:id>525</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="8"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="8"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="1000"/>
+                <ns2:uplink value="1000"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Silver-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Silver tier in-bundle"/>
+            <ns2:id>526</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="7"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="7"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="900"/>
+                <ns2:uplink value="900"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Silver-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Silver tier out-bundle"/>
+            <ns2:id>527</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="9"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="9"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="900"/>
+                <ns2:uplink value="900"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Bronze-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Bronze tier in-bundle"/>
+            <ns2:id>528</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="8"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="8"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="800"/>
+                <ns2:uplink value="800"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Bronze-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Bronze tier out-bundle"/>
+            <ns2:id>529</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="9"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="9"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="800"/>
+                <ns2:uplink value="800"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Copper-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Copper tier in-bundle"/>
+            <ns2:id>530</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="8"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="8"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="700"/>
+                <ns2:uplink value="700"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Copper-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Copper tier out-bundle"/>
+            <ns2:id>531</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="9"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="9"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="700"/>
+                <ns2:uplink value="700"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Tin-Inbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Tin tier in-bundle"/>
+            <ns2:id>532</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Mbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>MAY_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>NOT_PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="9"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="9"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="600"/>
+                <ns2:uplink value="600"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+        <ns2:qoSProfile xsi:type="authDefQoSProfile" name="Qos-Pdu-Tin-Outbundle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns2:description value="QoS for MobileShare Group Tin tier out-bundle"/>
+            <ns2:id>533</ns2:id>
+            <ns2:qosFlowPriorityLevel/>
+            <ns2:qosUnits>Kbps</ns2:qosUnits>
+            <ns2:tags/>
+            <authorisedDefaultQos>
+                <ns2:arp>
+                    <ns2:preemptionCapability>NOT_PREEMPT</ns2:preemptionCapability>
+                    <ns2:preemptionVulnerability>PREEMPTABLE</ns2:preemptionVulnerability>
+                    <ns2:priorityLevel value="9"/>
+                </ns2:arp>
+                <ns2:authDefQos5qi value="9"/>
+            </authorisedDefaultQos>
+            <authorisedSessionAmbr>
+                <ns2:downlink value="128"/>
+                <ns2:uplink value="128"/>
+            </authorisedSessionAmbr>
+        </ns2:qoSProfile>
+    </ns2:qoSProfiles>
+    <ns2:sdfFilters>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>DOWNLINK</flowDirection>
+            <flowLabel/>
+            <id>300</id>
+            <ipType>IPV4</ipType>
+            <localAddress/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="false"/>
+            <name value="ipv4-downlink"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder/>
+            <protocol>TCP</protocol>
+            <remoteAddress value="77.77.81.0"/>
+            <remoteMask value="255.255.255.0"/>
+            <remotePort/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>UPLINK</flowDirection>
+            <flowLabel/>
+            <id>301</id>
+            <ipType>IPV4</ipType>
+            <localAddress/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="false"/>
+            <name value="ipv4-uplink"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder/>
+            <protocol>TCP</protocol>
+            <remoteAddress value="77.77.81.0"/>
+            <remoteMask value="255.255.255.0"/>
+            <remotePort/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>DOWNLINK</flowDirection>
+            <flowLabel/>
+            <id>315</id>
+            <ipType>IPV4</ipType>
+            <localAddress/>
+            <localMask/>
+            <localPort value="80,443,8443"/>
+            <localPrefix/>
+            <matchAll value="false"/>
+            <name value="ipv4-downlink-https"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>UDP</protocol>
+            <remoteAddress value="77.77.81.0"/>
+            <remoteMask value="255.255.255.0"/>
+            <remotePort value="80,443,8443"/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>UPLINK</flowDirection>
+            <flowLabel/>
+            <id>316</id>
+            <ipType>IPV4</ipType>
+            <localAddress/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="false"/>
+            <name value="ipv4-uplink-https"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>UDP</protocol>
+            <remoteAddress value="77.77.81.0"/>
+            <remoteMask value="255.255.255.0"/>
+            <remotePort/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>UPLINK</flowDirection>
+            <flowLabel/>
+            <id>317</id>
+            <ipType>IPV6</ipType>
+            <localAddress/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="true"/>
+            <name value="ipv6-match-all"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>IP</protocol>
+            <remoteAddress/>
+            <remoteMask/>
+            <remotePort/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>DOWNLINK</flowDirection>
+            <flowLabel/>
+            <id>318</id>
+            <ipType>IPV4</ipType>
+            <localAddress value=""/>
+            <localMask/>
+            <localPort value="80, 8443, 443"/>
+            <localPrefix/>
+            <matchAll value="false"/>
+            <name value="operator-web-portal"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>TCP</protocol>
+            <remoteAddress value="186.43.151.5"/>
+            <remoteMask/>
+            <remotePort value="80, 8443, 443"/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>DOWNLINK</flowDirection>
+            <flowLabel/>
+            <id>319</id>
+            <ipType>IPV4</ipType>
+            <localAddress value=""/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="false"/>
+            <name value="operator-network"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>TCP</protocol>
+            <remoteAddress value="186.43.151.7"/>
+            <remoteMask value="255.255.0.0"/>
+            <remotePort/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>UPLINK</flowDirection>
+            <flowLabel/>
+            <id>363</id>
+            <ipType>IPV4</ipType>
+            <localAddress value=""/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="true"/>
+            <name value="All-Uplink"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>IP</protocol>
+            <remoteAddress value=""/>
+            <remoteMask/>
+            <remotePort/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>DOWNLINK</flowDirection>
+            <flowLabel/>
+            <id>365</id>
+            <ipType>IPV4</ipType>
+            <localAddress value=""/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="true"/>
+            <name value="All-Downlink"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>IP</protocol>
+            <remoteAddress value=""/>
+            <remoteMask/>
+            <remotePort/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description value="HBO Uplink filter"/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>UPLINK</flowDirection>
+            <flowLabel/>
+            <id>381</id>
+            <ipType>IPV4</ipType>
+            <localAddress value=""/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="false"/>
+            <name value="HBO-Uplink"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>UDP</protocol>
+            <remoteAddress value="170.1.1.0"/>
+            <remoteMask value="16"/>
+            <remotePort value="80"/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+        <ns2:sdfFilter>
+            <description value="HBO Downlink SDF Filter"/>
+            <ethFlowDescription>
+                <destMacAddr/>
+                <ethFlowDescription/>
+                <ethType/>
+                <sourceMacAddrr/>
+                <vlanTags/>
+            </ethFlowDescription>
+            <flowDirection>DOWNLINK</flowDirection>
+            <flowLabel/>
+            <id>382</id>
+            <ipType>IPV4</ipType>
+            <localAddress value=""/>
+            <localMask/>
+            <localPort/>
+            <localPrefix/>
+            <matchAll value="false"/>
+            <name value="HBO-Downlink"/>
+            <packFiltId/>
+            <packetFilterUsage/>
+            <placeholder value="false"/>
+            <protocol>UDP</protocol>
+            <remoteAddress value="170.1.1.0"/>
+            <remoteMask value="16"/>
+            <remotePort value="80"/>
+            <remotePrefix/>
+            <spi/>
+            <tags/>
+            <tosTrafficClass/>
+        </ns2:sdfFilter>
+    </ns2:sdfFilters>
+    <ns2:sdfTemplates>
+        <ns2:sdfTemplate>
+            <description/>
+            <id>302</id>
+            <name value="SDF-profile1"/>
+            <sdfFilters>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="300"]</sdfFilter>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="301"]</sdfFilter>
+            </sdfFilters>
+            <tags/>
+        </ns2:sdfTemplate>
+        <ns2:sdfTemplate>
+            <description/>
+            <id>320</id>
+            <name value="SDF-AllWebTraffic"/>
+            <sdfFilters>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="315"]</sdfFilter>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="316"]</sdfFilter>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="317"]</sdfFilter>
+            </sdfFilters>
+            <tags/>
+        </ns2:sdfTemplate>
+        <ns2:sdfTemplate>
+            <description/>
+            <id>321</id>
+            <name value="SDF-OperatorTraffic"/>
+            <sdfFilters>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="318"]</sdfFilter>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="319"]</sdfFilter>
+            </sdfFilters>
+            <tags/>
+        </ns2:sdfTemplate>
+        <ns2:sdfTemplate>
+            <description value="Default Match-All SDF Profile"/>
+            <id>364</id>
+            <name value="Match-All"/>
+            <sdfFilters>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="363"]</sdfFilter>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="365"]</sdfFilter>
+            </sdfFilters>
+            <tags/>
+        </ns2:sdfTemplate>
+        <ns2:sdfTemplate>
+            <description value="HBO SDF Profile"/>
+            <id>380</id>
+            <name value="HBO"/>
+            <sdfFilters>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="381"]</sdfFilter>
+                <sdfFilter module="gui-policies-data-model" type="SDFFilter">sdfFilters[id="382"]</sdfFilter>
+            </sdfFilters>
+            <tags/>
+        </ns2:sdfTemplate>
+    </ns2:sdfTemplates>
+</ns2:guiPoliciesRoot>

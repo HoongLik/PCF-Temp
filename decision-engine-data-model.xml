@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns7:decisionEnginesConfig module="decision-engine-data-model" version="1.4.0" xmlns:ns6="http://www.openet.com/sm-policies-data-model/1.x" xmlns:ns5="http://www.openet.com/pcf-conditions-data-model/1.x" xmlns:ns8="http://www.openet.com/forge-statistics-data-model/1.x" xmlns:ns7="http://www.openet.com/decision-engine-data-model/1.x" xmlns:ns9="http://www.openet.com/ue-policies-data-model/1.x" xmlns:ns10="http://www.openet.com/am-policies-data-model/1.x" xmlns:ns2="http://www.openet.com/pa-policies-data-model/1.x" xmlns:ns4="http://www.openet.com/gui-policies-data-model/1.x" xmlns:ns3="http://www.openet.com/reference-data-microservice-data-model/1.x">
+    <ns7:instances>
+        <ns7:instance id="1">
+            <ns7:refDataRuntimeConfigs>
+                <ns7:refDataRuntimeConfig name="com.openet.modules.pcf5g.composit.Robot">
+                    <path value="/opt/deploy/OMP/config/robots.csv"/>
+                </ns7:refDataRuntimeConfig>
+                <ns7:refDataRuntimeConfig name="com.openet.modules.pcf5g.simple.Robot">
+                    <path value="/opt/deploy/OMP/config/robots_simple.csv"/>
+                </ns7:refDataRuntimeConfig>
+            </ns7:refDataRuntimeConfigs>
+            <ns7:webServerConfig>
+                <bindAddress value="0.0.0.0"/>
+                <http2Settings>
+                    <maxConcurrentStreams value="1000"/>
+                </http2Settings>
+                <httpVersion value="http/2"/>
+                <overloadProtectionConfig>
+                    <performanceMetricConfigs/>
+                    <requestHistogramConfig>
+                        <updateInterval value="1000"/>
+                        <window value="10000"/>
+                    </requestHistogramConfig>
+                    <throttlingConfig>
+                        <evaluationPeriod value="1000"/>
+                        <maxAdjustmentStep value="10"/>
+                    </throttlingConfig>
+                </overloadProtectionConfig>
+                <port value="8443"/>
+                <receiveBufferSize value="8192"/>
+                <sendBufferSize value="8192"/>
+                <ssl value="false"/>
+                <tcpFastOpen value="true"/>
+                <tcpKeepAlive value="true"/>
+                <tlsConfig>
+                    <alpn value="true"/>
+                    <keystorePath value="/opt/deploy/OMP/keystore.jks"/>
+                    <storePassword value="storepass"/>
+                </tlsConfig>
+                <verticleInstances value="4"/>
+            </ns7:webServerConfig>
+        </ns7:instance>
+    </ns7:instances>
+</ns7:decisionEnginesConfig>
