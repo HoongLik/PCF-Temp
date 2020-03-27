@@ -4,7 +4,7 @@ pipeline {
     // See documentation here to see what else you can do with pipelines https://jenkins.io/doc/book/pipeline/syntax/
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
-    agent { label 'dubinx2-pcf-slave-kubectl' }
+    agent { label 'master' }
 
     triggers { pollSCM('* * * * *') }
 
